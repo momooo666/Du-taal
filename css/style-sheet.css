@@ -1,0 +1,394 @@
+@font-face {
+    src:url("../fonts/Josefin_Sans/static/JosefinSans-Bold.ttf");
+    font-family: "momo";
+    font-weight: 900;
+}
+@font-face {
+    src:url("../fonts/Josefin_Sans/static/JosefinSans-Medium.ttf");
+    font-family: "momo";
+    font-weight: 400;
+}
+@font-face {
+    src:url("../fonts/IBM_Plex_Serif/IBMPlexSerif-Light.ttf");
+    font-family: "ibm";
+    font-weight: 100;
+}
+@font-face {
+    src:url("../fonts/IBM_Plex_Serif/IBMPlexSerif-Medium.ttf");
+    font-family: "ibm";
+    font-weight: 300;
+}
+body {
+    font-size: 16px;
+    font-family: "ibm", serif;
+    font-weight: 100;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(54, 139, 168),rgb(148, 214, 236));
+    
+
+}
+/*navigation */
+header{
+    background-image: linear-gradient(to right, rgb(16, 115, 115),rgb(116, 235, 235));
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    padding: 5px;
+    box-sizing: border-box;
+    border-bottom: 3px solid black;
+    
+}
+#nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    width: 30%;
+    max-width: 500px;
+    min-width: 250px;
+    max-height: 40px;
+    min-height: 30px;
+    list-style-type:none;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 120%;    
+}
+li {
+    font-weight: bold;
+    box-sizing: border-box;
+    max-width: 100px;
+    min-width: 60px;
+} 
+/* links style*/
+a{
+    text-decoration: none;
+}
+a:link{
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: rgb(255, 0, 0);
+}
+a:visited{
+    color: rgb(14, 12, 144);
+}
+/*logo*/
+#logo{
+    max-width: 80px;
+    min-width: 50px;
+    
+}
+/* heading */
+h1 {
+    font-family: "momo", sans-serif;
+    font-weight: 900;
+    width:80%;
+    max-width: 500px;
+    min-width: 25px;
+    margin: 30px auto;
+    padding: 5px;
+    border-top: 5px solid rgb(255, 0, 0);
+    border-bottom:5px solid rgb(0, 0, 255);
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 3em;
+    box-sizing: border-box;  
+}
+p{
+    font-size: 1.2em;
+    
+    border-radius: 10px 10px;
+    box-sizing: border-box;
+}
+
+/*intro first paragraph with image*/
+#parg-1{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 20px;
+}
+#parg-1 div{
+    width: 50%;
+   
+    
+}
+#intro-1{
+    font-family: "ibm", serif;
+    font-weight: 300;
+    text-align: left;
+    width: 50%;
+    max-width: 500px;
+    min-width:250px ;
+    padding: 10px;
+    margin: 5px auto;
+    box-sizing: border-box;
+    color: rgb(28, 45, 52);
+    background-image: linear-gradient(to top, rgb(62, 113, 164), rgb(56, 194, 237));
+    
+}
+#intro-1::first-letter{
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: bold;
+}
+#book{
+    width: 100%;
+    overflow: hidden;
+    padding:5px;
+    margin: 5px auto;
+    box-sizing: border-box;
+   
+}
+/*second prag  figure-1 and figure-2 figure-3*/
+#fig-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+.du-taal{
+    width: 25%;
+    max-width: 500px;
+    min-width: 250px;
+    margin: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to top, rgb(6, 47, 87), rgb(56, 194, 237));
+    border-radius: 10px 10px;
+    color: white;
+}
+.du-taal img{
+    width: 50%;
+    max-width: 300px;
+    min-width: 200px;
+    
+}
+.du-taal p{
+    width: 50%;
+    max-width: 300px;
+    min-width: 200px;
+    text-align: left;
+    margin:10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+.du-taal div{
+    text-align: center;
+    margin: auto;
+}
+figure {
+    margin: 20px;
+    padding: 10px;
+}
+h3 {
+    font-family: "momo", sans-serif;
+    font-weight: 400;
+    width:30%;
+    max-width: 300px;
+    min-width: 200px;
+    overflow: hidden;
+    border-top: 3px solid rgb(255, 0, 0);
+    border-bottom:3px solid rgb(0, 0, 255);
+    border-radius: 10px;
+    font-style: normal;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1.7em;
+    box-sizing: border-box;
+    color: rgba(15, 23, 24, 0.8);
+    
+}
+
+/*footer*/
+.footer{
+    position: relative;
+}
+footer{
+
+    border-top: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,25%);
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right, rgb(16, 115, 115),rgb(12, 124, 124));
+    margin:30px auto;
+    padding:10px;
+}
+
+#privacy{
+    grid-column: 2/3;
+    color:rgb(255, 255, 255);
+}
+
+/* Signup form*/
+form{
+    margin: 10px auto;
+    padding: 10px;
+}
+fieldset{
+   
+    width: 100%;
+    max-width: 500px;
+    min-width: 250px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 10px auto;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, rgb(6, 47, 87), rgb(56, 194, 237));
+   
+}
+form div{
+    margin: 10px auto;
+    padding: 10px;
+}
+
+
+form h3{
+    width:50%;
+    max-width: 500px;
+    min-width: 200px;
+    border:0px;
+    background-color: rgb(6, 47, 87);
+    color: white;
+}
+
+
+input{
+    width: 70%;
+    max-width: 400px;
+    min-width: 200px;
+    height: 30px;
+    text-align: left;
+    background-color: rgb(215, 210, 210);
+    color: rgb(0 0 0);
+    border-radius: 5px;
+    
+    
+}
+.agrees{
+    max-width: 15px;
+    min-width: 10px;
+    height: 15px;
+    
+}
+#submit-1{
+    max-width: 80px;
+    min-width: 70px;
+    height: 25px;
+    text-align: center;
+    background-image: url("../images/register-button-png-18459\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: 80px;
+    border: transparent;
+}
+#sub-1{
+    text-align: right;
+    padding: 10px;
+    margin: 10px;
+}
+input:hover{
+    background-color: rgb(214, 201, 10);
+}
+input:focus{
+    background-color: blanchedalmond;
+}
+/* login stylee*/
+.log{
+    text-align: left;
+    margin: 10px;
+    font-family: "ibm", serif;
+    font-weight: 300;
+    padding-left: 50px;
+}
+#forg{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-family: "ibm", serif;
+    font-weight: 300;
+}
+#forg div{
+    width: 50%;
+}
+.log2{
+    text-align: center;
+    font-family: "ibm", serif;
+    font-weight: 300;
+    background-color: rgb(6, 47, 87);
+    border-radius: 10px;
+    color: white;
+}
+
+/*responsiv*/
+@media only screen and (max-width: 400px){
+    body{
+        font-size: 10px;
+        }
+    h1{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 1.2em;
+    }
+    #privacy{
+        font-size: 1em;
+    }
+    #parg-1 div{
+        max-width: 500px;
+        min-width: 250px;
+    }
+    
+}
+
+@media only screen and (min-width: 400px) {
+            body{
+                font-size: 12px;
+            }
+            h1{
+                font-size: 1.7em;
+            }
+            h3{
+                font-size: 1.5em;
+            }
+            p{
+                font-size: 1.2em;
+            }
+            #privacy{
+                font-size: 1em;
+            }
+            #parg-1 div{
+                max-width: 700px;
+                min-width: 300px;
+            }
+
+}
+@media only screen and (min-width: 1000px){
+    body{
+        font-size: 16px;
+    }
+    
+
+}
+
+@media only screen and (min-height: 1000px){
+    footer{
+        position: absolute;
+        bottom: -500px;
+        width: 95%;
+
+    }
+
+}
+
+
